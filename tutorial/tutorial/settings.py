@@ -171,3 +171,11 @@ COMMENTS_XTD_MAX_THREAD_LEVEL_BY_APP_MODEL = {
     # up to thread level 1.
         'blog.post': 1,
 }
+
+COMMENTS_XTD_APP_MODEL_OPTIONS = {
+    'blog.post': {
+        'allow_flagging': True,
+        'allow_feedback': False,
+        'show_feedback': False,
+    }
+}
