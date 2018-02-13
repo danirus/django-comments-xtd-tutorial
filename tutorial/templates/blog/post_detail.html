@@ -30,7 +30,7 @@
 {% if comment_count %}
 <hr/>
 <ul class="media-list">
-    {% render_xtdcomment_tree for object allow_flagging %}
+    {% render_xtdcomment_tree for object allow_flagging allow_feedback %}
 </ul>
 {% endif %}
 {% endblock %}
