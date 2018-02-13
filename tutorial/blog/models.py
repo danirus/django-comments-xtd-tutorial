@@ -43,6 +43,7 @@ class Post(models.Model):
 
 class PostCommentModerator(SpamModerator):
     email_notification = True
+    removal_suggestion_notification = True
 
     def moderate(self, comment, content_object, request):
         # Make a dictionary where the keys are the words and the message and
