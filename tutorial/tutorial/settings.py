@@ -176,6 +176,6 @@ COMMENTS_XTD_APP_MODEL_OPTIONS = {
     'blog.post': {
         'allow_flagging': True,
         'allow_feedback': True,
-        'show_feedback': False,
+        'show_feedback': True,
     }
 }
