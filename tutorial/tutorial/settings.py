@@ -162,3 +162,6 @@ COMMENTS_XTD_FROM_EMAIL = "noreply@example.com"
 COMMENTS_XTD_CONTACT_EMAIL = "helpdesk@example.com"
 
 COMMENTS_XTD_CONFIRM_EMAIL = False
+
+COMMENTS_XTD_MAX_THREAD_LEVEL = 1  # default is 0
+COMMENTS_XTD_LIST_ORDER = ('-thread_id', 'order')
