@@ -3,6 +3,9 @@ from django.urls import reverse
 from django.utils import timezone
 from django.contrib.auth.models import User
 
+from django_comments.moderation import CommentModerator
+from django_comments_xtd.moderation import moderator
+
 
 class PublicManager(models.Manager):
     def get_queryset(self):
@@ -35,3 +38,11 @@ class Post(models.Model):
                                'day': self.publish.strftime('%d'),
                                'slug': self.slug})
 
+
+class PostCommentModerator(CommentModerator):
+    email_notification = True
+    auto_moderate_field = 'publish'
+    moderate_after = 365
+
+
+moderator.register(Post, PostCommentModerator)

@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+MANAGERS = (
+    ('Joe Bloggs', 'joe.bloggs@example.com'),
+)
 
 # Application definition
 
