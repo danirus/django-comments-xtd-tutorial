@@ -1,2 +1,4 @@
 venv/
 .emacs.desktop*
+__pycache__
+db.sqlite3
