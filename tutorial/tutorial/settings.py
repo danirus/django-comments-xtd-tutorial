@@ -161,3 +161,4 @@ COMMENTS_XTD_FROM_EMAIL = "noreply@example.com"
 # Contact mail address to show in messages.
 COMMENTS_XTD_CONTACT_EMAIL = "helpdesk@example.com"
 
+COMMENTS_XTD_CONFIRM_EMAIL = False

@@ -4,7 +4,7 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 from django_comments.moderation import CommentModerator
-from django_comments_xtd.moderation import moderator
+from django_comments_xtd.moderation import moderator, SpamModerator
 
 
 class PublicManager(models.Manager):
@@ -39,7 +39,7 @@ class Post(models.Model):
                                'slug': self.slug})
 
 
-class PostCommentModerator(CommentModerator):
+class PostCommentModerator(SpamModerator):
     email_notification = True
     auto_moderate_field = 'publish'
     moderate_after = 365
